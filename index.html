@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiaTourism - Incredible India Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><span class="logo-icon">✦</span><span class="logo-text">India<span class="highlight">Tourism</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="packages.html" class="nav-link">Packages</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="search-toggle" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Trip</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <form class="search-form" id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Search destinations, activities, hotels..." autocomplete="off">
+                    <select id="searchCategory"><option value="all">All</option><option value="destinations">Destinations</option><option value="hotels">Hotels & Stays</option><option value="transport">Transport</option><option value="activities">Activities</option><option value="heritage">Heritage Sites</option></select>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                    <button type="button" class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                </form>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Slider -->
+    <div class="hero-slider" id="heroSlider">
+        <div class="slider-track" id="sliderTrack">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920&q=80') center/cover;">
+                <div class="slide-content">
+                    <span class="slide-subtitle">Discover the Magic of</span>
+                    <h1 class="slide-title">Incredible <span class="text-saffron">India</span></h1>
+                    <p class="slide-desc">From the majestic Taj Mahal to the serene backwaters of Kerala, explore 5000 years of living heritage</p>
+                    <div class="slide-btns"><a href="destinations.html" class="btn btn-primary btn-lg">Explore Places</a><a href="packages.html" class="btn btn-outline-light btn-lg">View Packages</a></div>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://upload.wikimedia.org/wikipedia/commons/8/82/Varanasi_on_sunset.jpg') center/cover;">
+                <div class="slide-content">
+                    <span class="slide-subtitle">Experience Divine Spirituality</span>
+                    <h1 class="slide-title">Sacred <span class="text-green">Varanasi</span></h1>
+                    <p class="slide-desc">Witness the eternal Ganga Aarti and walk through the ancient ghats of the world's oldest living city</p>
+                    <div class="slide-btns"><a href="destinations.html" class="btn btn-primary btn-lg">Explore Varanasi</a><a href="booking.html" class="btn btn-outline-light btn-lg">Plan Visit</a></div>
+                    <div class="slide-attribution"><i class="fas fa-license"></i> Slide photo: Wikimedia Commons (CC BY-SA 4.0)</div>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1590050752117-298957c32a53?auto=format&fit=crop&w=1920&q=80') center/cover;">
+                <div class="slide-content">
+                    <span class="slide-subtitle">God's Own Country</span>
+                    <h1 class="slide-title">Beautiful <span class="text-green">Kerala</span></h1>
+                    <p class="slide-desc">Glide through tranquil backwaters, rejuvenate with Ayurveda, and taste the spice-scented air of Munnar</p>
+                    <div class="slide-btns"><a href="destinations.html" class="btn btn-primary btn-lg">Explore Kerala</a><a href="packages.html" class="btn btn-outline-light btn-lg">Kerala Packages</a></div>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1920&q=80') center/cover;">
+                <div class="slide-content">
+                    <span class="slide-subtitle">The Land of Forts and Heritage</span>
+                    <h1 class="slide-title">Royal <span class="text-saffron">Rajasthan</span></h1>
+                    <p class="slide-desc">Majestic forts, golden deserts, vibrant culture and the warmth of desert hospitality</p>
+                    <div class="slide-btns"><a href="destinations.html" class="btn btn-primary btn-lg">Explore Rajasthan</a><a href="booking.html" class="btn btn-outline-light btn-lg">Desert Safari</a></div>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1659245123387-0ef44b7d55b6?auto=format&fit=crop&w=1920&q=85') center/cover;">
+                <div class="slide-content">
+                    <span class="slide-subtitle">The Roof of India</span>
+                    <h1 class="slide-title">Mystical <span class="text-saffron">Ladakh</span></h1>
+                    <p class="slide-desc">Pristine landscapes, ancient monasteries and thrilling mountain passes await the adventurous soul</p>
+                    <div class="slide-btns"><a href="destinations.html" class="btn btn-primary btn-lg">Explore Ladakh</a><a href="packages.html" class="btn btn-outline-light btn-lg">Adventure Tours</a></div>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn slider-prev" id="sliderPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn slider-next" id="sliderNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </div>
+
+    <!-- Weather Widget -->
+    <div class="weather-widget" id="weatherWidget">
+        <div class="weather-toggle" id="weatherToggle"><i class="fas fa-cloud-sun"></i><span>Live Weather</span></div>
+        <div class="weather-panel" id="weatherPanel">
+            <div class="weather-header"><h4><i class="fas fa-cloud-sun"></i> Live Weather Tracker</h4><button class="weather-close" id="weatherClose"><i class="fas fa-times"></i></button></div>
+            <div class="weather-search"><input type="text" id="weatherCityInput" placeholder="Enter city name..." value="New Delhi"><button class="btn btn-primary btn-sm" id="weatherSearchBtn"><i class="fas fa-search"></i></button></div>
+            <div class="weather-display" id="weatherDisplay">
+                <div class="weather-main"><div class="weather-icon" id="weatherIcon"><i class="fas fa-sun"></i></div><div class="weather-temp" id="weatherTemp">--°C</div></div>
+                <div class="weather-desc" id="weatherDesc">Loading weather...</div>
+                <div class="weather-details">
+                    <div class="weather-detail"><i class="fas fa-tint"></i><span id="weatherHumidity">--%</span><small>Humidity</small></div>
+                    <div class="weather-detail"><i class="fas fa-wind"></i><span id="weatherWind">-- km/h</span><small>Wind</small></div>
+                    <div class="weather-detail"><i class="fas fa-eye"></i><span id="weatherVisibility">-- km</span><small>Visibility</small></div>
+                    <div class="weather-detail"><i class="fas fa-thermometer-half"></i><span id="weatherFeels">--°C</span><small>Feels Like</small></div>
+                </div>
+                <div class="weather-city" id="weatherCity">New Delhi, India</div>
+                <div class="weather-time" id="weatherTime"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Search -->
+    <div class="quick-search-section">
+        <div class="container">
+            <div class="quick-search-card">
+                <h2>Plan Your Perfect <span class="text-saffron">Indian Adventure</span></h2>
+                <form class="quick-search-form" id="quickSearchForm">
+                    <div class="qs-row">
+                        <div class="qs-group"><label><i class="fas fa-map-marker-alt"></i> Destination</label><select id="qsDestination"><option value="">Where to?</option><option value="delhi">Delhi - The Capital</option><option value="agra">Agra - Taj Mahal</option><option value="jaipur">Jaipur - Pink City</option><option value="varanasi">Varanasi - Spiritual Capital</option><option value="kerala">Kerala - God's Own Country</option><option value="goa">Goa - Beach Paradise</option><option value="rajasthan">Rajasthan - Royal State</option><option value="himachal">Himachal Pradesh</option><option value="kashmir">Kashmir - Paradise on Earth</option><option value="ladakh">Ladakh - Land of High Passes</option><option value="darjeeling">Darjeeling - Queen of Hills</option><option value="odisha">Odisha - Soul of India</option><option value="madhya-pradesh">Madhya Pradesh - Heart of India</option><option value="sikkim">Sikkim - Northeast Gem</option></select></div>
+                        <div class="qs-group"><label><i class="fas fa-calendar"></i> Travel Date</label><input type="date" id="qsDate"></div>
+                        <div class="qs-group"><label><i class="fas fa-users"></i> Travelers</label><select id="qsTravelers"><option>1 Traveler</option><option>2 Travelers</option><option selected>2-5 Travelers</option><option>5-10 Travelers</option><option>10+ Group</option></select></div>
+                        <div class="qs-group"><label><i class="fas fa-bed"></i> Stay Type</label><select id="qsStayType"><option value="">Select Stay</option><option value="hotel">Hotel</option><option value="airbnb">Airbnb / Homestay</option><option value="hostel">Hostel</option><option value="resort">Resort</option><option value="heritage">Heritage Haveli</option><option value="houseboat">Houseboat</option></select></div>
+                        <button type="submit" class="btn btn-primary btn-lg qs-btn"><i class="fas fa-search"></i> Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Destinations -->
+    <section class="section destinations-preview">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-compass"></i> Explore India</span><h2>Trending <span class="text-saffron">Destinations</span></h2><p>From snow-capped Himalayas to tropical beaches, discover India's incredible diversity</p></div>
+            <div class="destination-grid" id="trendingDestinations"></div>
+            <div class="section-footer"><a href="destinations.html" class="btn btn-outline-primary">View All Destinations <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+    </section>
+
+    <!-- Trip Planner -->
+    <section class="section trip-planner-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-route"></i> Trip Planner</span><h2>Build Your <span class="text-green">Dream Itinerary</span></h2><p>Customize your trip with our intelligent trip planner</p></div>
+            <div class="trip-planner">
+                <div class="tp-sidebar">
+                    <h4><i class="fas fa-list-ol"></i> Your Itinerary</h4>
+                    <div class="tp-budget"><label>Estimated Budget</label><div class="budget-range"><input type="range" id="tpBudget" min="5000" max="500000" value="50000" step="1000"><span id="tpBudgetDisplay">₹50,000</span></div></div>
+                    <div class="tp-duration"><label>Trip Duration</label><select id="tpDuration"><option>1-2 Days</option><option selected>3-5 Days</option><option>5-7 Days</option><option>7-14 Days</option><option>14+ Days</option></select></div>
+                    <div class="tp-interests"><label>Interests</label><div class="interest-tags">
+                        <button class="interest-tag active" data-interest="heritage"><i class="fas fa-landmark"></i> Heritage</button>
+                        <button class="interest-tag" data-interest="nature"><i class="fas fa-leaf"></i> Nature</button>
+                        <button class="interest-tag" data-interest="adventure"><i class="fas fa-mountain"></i> Adventure</button>
+                        <button class="interest-tag" data-interest="spiritual"><i class="fas fa-spa"></i> Spiritual</button>
+                        <button class="interest-tag" data-interest="food"><i class="fas fa-utensils"></i> Food</button>
+                        <button class="interest-tag" data-interest="wildlife"><i class="fas fa-paw"></i> Wildlife</button>
+                        <button class="interest-tag" data-interest="beach"><i class="fas fa-umbrella-beach"></i> Beach</button>
+                        <button class="interest-tag" data-interest="shopping"><i class="fas fa-shopping-bag"></i> Shopping</button>
+                    </div></div>
+                    <button class="btn btn-primary btn-block" id="tpGenerate"><i class="fas fa-magic"></i> Generate Itinerary</button>
+                </div>
+                <div class="tp-result" id="tpResult"><div class="tp-placeholder"><i class="fas fa-map-marked-alt"></i><h4>Your Itinerary Awaits</h4><p>Select your preferences and click Generate to create a personalized trip plan</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Time to Visit -->
+    <section class="section best-time-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-calendar-alt"></i> Best Time to Visit</span><h2>When to Visit <span class="text-saffron">India</span></h2><p>Plan your trip according to the perfect season</p></div>
+            <div class="season-cards">
+                <div class="season-card winter"><div class="season-icon"><i class="fas fa-snowflake"></i></div><h3>Winter</h3><span class="season-months">Oct - Feb</span><p>Best for Rajasthan, Goa, Kerala, Delhi, Agra. Pleasant weather, perfect for sightseeing.</p><div class="season-temp"><i class="fas fa-temperature-low"></i> 8°C - 25°C</div><ul class="season-places"><li>Rajasthan Desert</li><li>Goa Beaches</li><li>Kerala Backwaters</li><li>Taj Mahal</li></ul></div>
+                <div class="season-card summer"><div class="season-icon"><i class="fas fa-sun"></i></div><h3>Summer</h3><span class="season-months">Mar - Jun</span><p>Best for hill stations like Manali, Shimla, Darjeeling, Ladakh. Escape the heat.</p><div class="season-temp"><i class="fas fa-temperature-high"></i> 15°C - 45°C</div><ul class="season-places"><li>Manali & Shimla</li><li>Ladakh</li><li>Darjeeling</li><li>Uttarakhand</li></ul></div>
+                <div class="season-card monsoon"><div class="season-icon"><i class="fas fa-cloud-rain"></i></div><h3>Monsoon</h3><span class="season-months">Jul - Sep</span><p>Best for Meghalaya, Coorg, Udaipur, Goa. Lush green landscapes and fewer crowds.</p><div class="season-temp"><i class="fas fa-umbrella"></i> 20°C - 35°C</div><ul class="season-places"><li>Meghalaya</li><li>Coorg</li><li>Udaipur Lakes</li><li>Munnar</li></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Activities -->
+    <section class="section activities-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-hiking"></i> Top Activities</span><h2>Things to <span class="text-green">Do in India</span></h2><p>Experience the incredible range of activities India offers</p></div>
+            <div class="activities-grid" id="activitiesGrid"></div>
+        </div>
+    </section>
+
+    <!-- Heritage Sites -->
+    <section class="section heritage-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-landmark"></i> Heritage & Culture</span><h2>India's <span class="text-saffron">Heritage Sites</span></h2><p>Explore UNESCO World Heritage Sites and living cultural traditions</p></div>
+            <div class="heritage-grid" id="heritageGrid"></div>
+        </div>
+    </section>
+
+    <!-- Featured Stays -->
+    <section class="section stays-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-bed"></i> Best Stays</span><h2>Where to <span class="text-green">Stay</span></h2><p>From heritage palaces to cozy homestays, find your perfect accommodation</p></div>
+            <div class="stays-grid" id="staysGrid"></div>
+            <div class="section-footer"><a href="services.html" class="btn btn-outline-primary">View All Stays <i class="fas fa-arrow-right"></i></a></div>
+        </div>
+    </section>
+
+    <!-- Transport Options -->
+    <section class="section transport-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-plane"></i> Transport</span><h2>Getting <span class="text-saffron">Around India</span></h2><p>Multiple transport options to explore every corner of India</p></div>
+            <div class="transport-grid" id="transportGrid"></div>
+        </div>
+    </section>
+
+    <!-- Restaurants -->
+    <section class="section restaurants-section">
+        <div class="container">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-utensils"></i> Indian Cuisine</span><h2>Famous <span class="text-saffron">Restaurants</span></h2><p>Savor the incredible flavors of Indian cuisine</p></div>
+            <div class="restaurant-grid" id="restaurantGrid"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header light"><span class="section-tag"><i class="fas fa-quote-left"></i> Traveler Stories</span><h2>What Travelers <span class="text-saffron">Say</span></h2></div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial active"><div class="testimonial-content"><i class="fas fa-quote-left quote-icon"></i><p>"India changed my life. The colors, the spirituality, the warmth of people - nothing compares."</p><div class="testimonial-author"><div class="author-avatar"><i class="fas fa-user"></i></div><div><strong>Sarah Mitchell</strong><span>London, UK - Rajasthan Tour</span></div></div></div></div>
+                <div class="testimonial"><div class="testimonial-content"><i class="fas fa-quote-left quote-icon"></i><p>"The Kerala backwater houseboat experience was magical. Pure bliss!"</p><div class="testimonial-author"><div class="author-avatar"><i class="fas fa-user"></i></div><div><strong>Hans Weber</strong><span>Berlin, Germany - Kerala Package</span></div></div></div></div>
+                <div class="testimonial"><div class="testimonial-content"><i class="fas fa-quote-left quote-icon"></i><p>"Varanasi's Ganga Aarti was a spiritual experience unlike any other. Highly recommended!"</p><div class="testimonial-author"><div class="author-avatar"><i class="fas fa-user"></i></div><div><strong>Yuki Tanaka</strong><span>Tokyo, Japan - Spiritual Tour</span></div></div></div></div>
+                <div class="testimonial"><div class="testimonial-content"><i class="fas fa-quote-left quote-icon"></i><p>"Trekking in Ladakh was the adventure of a lifetime. The team took great care of us!"</p><div class="testimonial-author"><div class="author-avatar"><i class="fas fa-user"></i></div><div><strong>Mike Johnson</strong><span>California, USA - Ladakh Trek</span></div></div></div></div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Explore <span class="text-saffron">India</span>?</h2>
+                <p>Start your incredible journey today with curated packages, expert guides and unforgettable experiences</p>
+                <div class="cta-stats">
+                    <div class="cta-stat"><span class="stat-number" data-target="500">0</span>+<span>Destinations</span></div>
+                    <div class="cta-stat"><span class="stat-number" data-target="10000">0</span>+<span>Happy Travelers</span></div>
+                    <div class="cta-stat"><span class="stat-number" data-target="200">0</span>+<span>Tour Packages</span></div>
+                    <div class="cta-stat"><span class="stat-number" data-target="500">0</span>+<span>Verified Hotels</span></div>
+                </div>
+                <div class="cta-btns">
+                    <a href="packages.html" class="btn btn-primary btn-lg">Explore Packages</a>
+                    <a href="booking.html" class="btn btn-outline-light btn-lg">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="top-bar"><div class="container"><div class="top-bar-left"><span><i class="fas fa-phone-alt"></i> +91-1800-180-3636</span><span><i class="fas fa-envelope"></i> info@indiatourism.gov.in</span></div><div class="top-bar-right"><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div></div></div>
+    <footer class="footer" id="footer">
+        <div class="footer-wave"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,30 1440,60 L1440,120 L0,120 Z" fill="currentColor"></path></svg></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about"><a href="index.html" class="footer-logo"><span class="logo-icon">✦</span><span class="logo-text">India<span class="highlight">Tourism</span></span></a><p>Your trusted gateway to experiencing the incredible diversity, rich heritage, and warm hospitality of India.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-pinterest"></i></a></div></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="packages.html">Tour Packages</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Destinations</h4><ul><li><a href="destinations.html">Rajasthan</a></li><li><a href="destinations.html">Kerala</a></li><li><a href="destinations.html">Goa</a></li><li><a href="destinations.html">Varanasi</a></li><li><a href="destinations.html">Ladakh</a></li><li><a href="destinations.html">Himachal Pradesh</a></li></ul></div>
+                <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Hotels & Stays</a></li><li><a href="services.html">Transport</a></li><li><a href="booking.html">Book a Trip</a></li><li><a href="services.html">Visa Assistance</a></li><li><a href="services.html">Wildlife Safaris</a></li><li><a href="services.html">Ayurveda & Wellness</a></li></ul></div>
+                <div class="footer-col"><h4>Newsletter</h4><p>Get the latest travel tips, exclusive deals, and destination guides delivered to your inbox.</p><form class="newsletter-form" id="newsletterForm"><div class="newsletter-input"><input type="email" id="newsletterEmail" placeholder="Your email address" required><button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-arrow-right"></i></button></div></form></div>
+            </div>
+            <div class="footer-bottom"><div class="footer-bottom-left"><p>&copy; 2026 IndiaTourism. All rights reserved.</p></div><div class="footer-bottom-right"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div></div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+    <div class="modal" id="successModal"><div class="modal-overlay"></div><div class="modal-content"><div class="modal-icon"><i class="fas fa-check-circle"></i></div><h3 id="modalTitle">Success!</h3><p id="modalMessage">Your booking has been confirmed.</p><button class="btn btn-primary" id="modalClose">Continue</button></div></div>
+    <script src="script.js"></script>
+</body>
+</html>

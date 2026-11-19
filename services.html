@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - IndiaTourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar"><div class="container"><a href="index.html" class="logo"><span class="logo-icon">✦</span><span class="logo-text">India<span class="highlight">Tourism</span></span></a><div class="nav-links" id="navLinks"><a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="destinations.html" class="nav-link">Destinations</a><a href="services.html" class="nav-link active">Services</a><a href="gallery.html" class="nav-link">Gallery</a><a href="packages.html" class="nav-link">Packages</a><a href="booking.html" class="nav-link">Book Now</a><a href="contact.html" class="nav-link">Contact</a></div><div class="nav-actions"><button class="search-toggle" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button><a href="booking.html" class="btn btn-primary btn-sm">Book Trip</a><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div></div><div class="search-bar" id="searchBar"><div class="container"><form class="search-form" id="searchForm"><input type="text" id="searchInput" placeholder="Search destinations, activities, hotels..." autocomplete="off"><select id="searchCategory"><option value="all">All</option><option value="destinations">Destinations</option><option value="hotels">Hotels & Stays</option><option value="transport">Transport</option><option value="activities">Activities</option><option value="heritage">Heritage Sites</option></select><button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button><button type="button" class="search-close" id="searchClose"><i class="fas fa-times"></i></button></form><div class="search-suggestions" id="searchSuggestions"></div></div></div></nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="page-hero services-hero"><div class="page-hero-content"><h1>Our <span class="text-saffron">Services</span></h1><p>Comprehensive travel solutions for every type of traveler</p><nav class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Services</span></nav></div></div>
+    <div class="container">
+        <section class="section">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-bed"></i> Accommodation</span><h2>Find Your Perfect <span class="text-saffron">Stay</span></h2><p>From luxury palaces to budget hostels, we've got every type of accommodation covered</p></div>
+            <div class="services-tabs"><button class="service-tab active" data-stab="hotels"><i class="fas fa-hotel"></i> Hotels</button><button class="service-tab" data-stab="airbnb"><i class="fas fa-home"></i> Airbnb / Homestays</button><button class="service-tab" data-stab="hostels"><i class="fas fa-users"></i> Hostels</button><button class="service-tab" data-stab="guesthouses"><i class="fas fa-door-open"></i> Guest Houses</button><button class="service-tab" data-stab="heritage-stays"><i class="fas fa-landmark"></i> Heritage Stays</button></div>
+            <div class="services-content" id="staysContent"></div>
+        </section>
+        <section class="section">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-car"></i> Transport</span><h2>Travel <span class="text-green">Options</span></h2><p>Multiple ways to explore India's incredible landscape</p></div>
+            <div class="transport-options-grid" id="transportOptionsGrid"></div>
+        </section>
+        <section class="section">
+            <div class="section-header"><span class="section-tag"><i class="fas fa-concierge-bell"></i> More Services</span><h2>Additional <span class="text-saffron">Services</span></h2></div>
+            <div class="additional-services">
+                <div class="add-service"><i class="fas fa-passport"></i><h4>Visa Assistance</h4><p>Complete visa guidance and e-Visa application support for international travelers.</p></div>
+                <div class="add-service"><i class="fas fa-camera"></i><h4>Photography Tours</h4><p>Professional photography guides to capture India's beauty at its best moments.</p></div>
+                <div class="add-service"><i class="fas fa-spa"></i><h4>Ayurveda & Wellness</h4><p>Authentic Ayurvedic retreats and wellness packages in Kerala and Rishikesh.</p></div>
+                <div class="add-service"><i class="fas fa-utensils"></i><h4>Food & Culinary Tours</h4><p>Taste the incredible diversity of Indian cuisine with guided food walks and cooking classes.</p></div>
+                <div class="add-service"><i class="fas fa-pray"></i><h4>Spiritual Journeys</h4><p>Guided pilgrimages to sacred sites - Varanasi, Rishikesh, Amritsar, Tirupati and more.</p></div>
+                <div class="add-service"><i class="fas fa-paw"></i><h4>Wildlife Safaris</h4><p>Expert-guided safaris in Ranthambore, Jim Corbett, Kaziranga and other national parks.</p></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="top-bar"><div class="container"><div class="top-bar-left"><span><i class="fas fa-phone-alt"></i> +91-1800-180-3636</span><span><i class="fas fa-envelope"></i> info@indiatourism.gov.in</span></div><div class="top-bar-right"><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div></div></div>
+    <footer class="footer" id="footer"><div class="footer-wave"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,30 1440,60 L1440,120 L0,120 Z" fill="currentColor"></path></svg></div><div class="container"><div class="footer-grid"><div class="footer-col footer-about"><a href="index.html" class="footer-logo"><span class="logo-icon">✦</span><span class="logo-text">India<span class="highlight">Tourism</span></span></a><p>Your trusted gateway to experiencing the incredible diversity, rich heritage, and warm hospitality of India.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-pinterest"></i></a></div></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="packages.html">Tour Packages</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Destinations</h4><ul><li><a href="destinations.html">Rajasthan</a></li><li><a href="destinations.html">Kerala</a></li><li><a href="destinations.html">Goa</a></li><li><a href="destinations.html">Varanasi</a></li><li><a href="destinations.html">Ladakh</a></li><li><a href="destinations.html">Himachal Pradesh</a></li></ul></div><div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Hotels & Stays</a></li><li><a href="services.html">Transport</a></li><li><a href="booking.html">Book a Trip</a></li><li><a href="services.html">Visa Assistance</a></li><li><a href="services.html">Wildlife Safaris</a></li><li><a href="services.html">Ayurveda & Wellness</a></li></ul></div><div class="footer-col"><h4>Newsletter</h4><p>Get the latest travel tips and exclusive deals.</p><form class="newsletter-form" id="newsletterForm"><div class="newsletter-input"><input type="email" id="newsletterEmail" placeholder="Your email address" required><button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-arrow-right"></i></button></div></form></div></div><div class="footer-bottom"><div class="footer-bottom-left"><p>&copy; 2026 IndiaTourism. All rights reserved.</p></div><div class="footer-bottom-right"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div></div></div></footer>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+    <div class="modal" id="successModal"><div class="modal-overlay"></div><div class="modal-content"><div class="modal-icon"><i class="fas fa-check-circle"></i></div><h3 id="modalTitle">Success!</h3><p id="modalMessage">Your booking has been confirmed.</p><button class="btn btn-primary" id="modalClose">Continue</button></div></div>
+    <script src="script.js"></script>
+</body>
+</html>

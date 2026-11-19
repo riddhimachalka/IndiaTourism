@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - IndiaTourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><span class="logo-icon">✦</span><span class="logo-text">India<span class="highlight">Tourism</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="destinations.html" class="nav-link">Destinations</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="packages.html" class="nav-link">Packages</a>
+                <a href="booking.html" class="nav-link">Book Now</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="search-toggle" id="searchToggle" aria-label="Search"><i class="fas fa-search"></i></button>
+                <a href="booking.html" class="btn btn-primary btn-sm">Book Trip</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+        <div class="search-bar" id="searchBar">
+            <div class="container">
+                <form class="search-form" id="searchForm">
+                    <input type="text" id="searchInput" placeholder="Search destinations, activities, hotels..." autocomplete="off">
+                    <select id="searchCategory">
+                        <option value="all">All</option><option value="destinations">Destinations</option><option value="hotels">Hotels & Stays</option><option value="transport">Transport</option><option value="activities">Activities</option><option value="heritage">Heritage Sites</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                    <button type="button" class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+                </form>
+                <div class="search-suggestions" id="searchSuggestions"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="page-hero about-hero">
+        <div class="page-hero-content">
+            <h1>About <span class="text-saffron">IndiaTourism</span></h1>
+            <p>Discover the soul of Incredible India with us</p>
+            <nav class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>About</span></nav>
+        </div>
+    </div>
+    <div class="container">
+        <section class="section about-intro">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag"><i class="fas fa-feather-alt"></i> Our Story</span>
+                    <h2>Celebrating <span class="text-saffron">5000 Years</span> of Indian Heritage</h2>
+                    <p>IndiaTourism is your gateway to experiencing the incredible diversity of India - a land where ancient traditions blend seamlessly with modern marvels. We are passionate about showcasing India's rich cultural tapestry, breathtaking landscapes, and warm hospitality to travelers from around the world.</p>
+                    <p>Our mission is to make India's tourism accessible, authentic, and unforgettable. We work closely with local communities, certified guides, and trusted hospitality partners to deliver experiences that go beyond typical tourism.</p>
+                    <div class="about-features">
+                        <div class="about-feature"><i class="fas fa-shield-alt"></i><div><h4>Trusted & Safe</h4><p>Verified partners and secure bookings</p></div></div>
+                        <div class="about-feature"><i class="fas fa-headset"></i><div><h4>24/7 Support</h4><p>Round-the-clock assistance for travelers</p></div></div>
+                        <div class="about-feature"><i class="fas fa-hand-holding-heart"></i><div><h4>Local Experiences</h4><p>Authentic, community-driven tourism</p></div></div>
+                        <div class="about-feature"><i class="fas fa-leaf"></i><div><h4>Eco-Friendly</h4><p>Sustainable and responsible tourism</p></div></div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-img-main"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&q=80" alt="Taj Mahal" loading="lazy"></div>
+                    <div class="about-img-secondary"><img src="https://images.unsplash.com/photo-1590050752117-298957c32a53?w=400&q=80" alt="Kerala" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section india-stats">
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-icon"><i class="fas fa-landmark"></i></div><div class="stat-number-lg">40+</div><div class="stat-label">UNESCO World Heritage Sites</div></div>
+                <div class="stat-card"><div class="stat-icon"><i class="fas fa-globe-asia"></i></div><div class="stat-number-lg">28</div><div class="stat-label">States & 8 Union Territories</div></div>
+                <div class="stat-card"><div class="stat-icon"><i class="fas fa-language"></i></div><div class="stat-number-lg">780+</div><div class="stat-label">Languages Spoken</div></div>
+                <div class="stat-card"><div class="stat-icon"><i class="fas fa-calendar-check"></i></div><div class="stat-number-lg">5000+</div><div class="stat-label">Years of Living Heritage</div></div>
+            </div>
+        </section>
+        <section class="section why-us">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-star"></i> Why Choose Us</span>
+                <h2>Why Travel With <span class="text-saffron">IndiaTourism</span></h2>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-card"><div class="why-icon"><i class="fas fa-route"></i></div><h3>Curated Itineraries</h3><p>Expert-crafted tour plans that balance iconic landmarks with hidden gems, tailored to your interests and pace.</p></div>
+                <div class="why-card"><div class="why-icon"><i class="fas fa-user-tie"></i></div><h3>Expert Local Guides</h3><p>Certified, passionate guides who bring history alive and share insider knowledge you won't find in guidebooks.</p></div>
+                <div class="why-card"><div class="why-icon"><i class="fas fa-hand-holding-usd"></i></div><h3>Best Value</h3><p>Transparent pricing with no hidden costs. Premium experiences at competitive prices with flexible payment options.</p></div>
+                <div class="why-card"><div class="why-icon"><i class="fas fa-cogs"></i></div><h3>Customizable Packages</h3><p>Every tour can be personalized. Mix destinations, choose your accommodation level, and add unique experiences.</p></div>
+                <div class="why-card"><div class="why-icon"><i class="fas fa-shield-alt"></i></div><h3>Safe & Secure</h3><p>Travel with confidence. Fully insured trips, verified accommodations, and 24/7 on-ground support.</p></div>
+                <div class="why-card"><div class="why-icon"><i class="fas fa-handshake"></i></div><h3>Responsible Tourism</h3><p>We support local communities, promote eco-friendly practices, and ensure tourism benefits everyone.</p></div>
+            </div>
+        </section>
+        <section class="section team-section">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-users"></i> Our Team</span>
+                <h2>Meet the <span class="text-green">Passionate People</span></h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card"><div class="team-avatar"><i class="fas fa-user"></i></div><h4>Priya Sharma</h4><span>Founder & CEO</span><p>20+ years in Indian tourism with a passion for promoting Incredible India globally.</p></div>
+                <div class="team-card"><div class="team-avatar"><i class="fas fa-user"></i></div><h4>Rajesh Kumar</h4><span>Head of Operations</span><p>Expert in logistics and ensuring every trip runs like clockwork across all destinations.</p></div>
+                <div class="team-card"><div class="team-avatar"><i class="fas fa-user"></i></div><h4>Ananya Patel</h4><span>Lead Travel Curator</span><p>Creates bespoke travel experiences that blend cultural immersion with adventure.</p></div>
+                <div class="team-card"><div class="team-avatar"><i class="fas fa-user"></i></div><h4>Arjun Singh</h4><span>Guest Relations</span><p>Ensures every traveler feels at home with personalized attention and local insights.</p></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone-alt"></i> +91-1800-180-3636</span>
+                <span><i class="fas fa-envelope"></i> info@indiatourism.gov.in</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footer-wave"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,30 1440,60 L1440,120 L0,120 Z" fill="currentColor"></path></svg></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo"><span class="logo-icon">✦</span><span class="logo-text">India<span class="highlight">Tourism</span></span></a>
+                    <p>Your trusted gateway to experiencing the incredible diversity, rich heritage, and warm hospitality of India.</p>
+                    <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-pinterest"></i></a></div>
+                </div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="destinations.html">Destinations</a></li><li><a href="packages.html">Tour Packages</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-col"><h4>Destinations</h4><ul><li><a href="destinations.html">Rajasthan</a></li><li><a href="destinations.html">Kerala</a></li><li><a href="destinations.html">Goa</a></li><li><a href="destinations.html">Varanasi</a></li><li><a href="destinations.html">Ladakh</a></li><li><a href="destinations.html">Himachal Pradesh</a></li></ul></div>
+                <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">Hotels & Stays</a></li><li><a href="services.html">Transport</a></li><li><a href="booking.html">Book a Trip</a></li><li><a href="services.html">Visa Assistance</a></li><li><a href="services.html">Wildlife Safaris</a></li><li><a href="services.html">Ayurveda & Wellness</a></li></ul></div>
+                <div class="footer-col"><h4>Newsletter</h4><p>Get the latest travel tips, exclusive deals, and destination guides delivered to your inbox.</p>
+                    <form class="newsletter-form" id="newsletterForm"><div class="newsletter-input"><input type="email" id="newsletterEmail" placeholder="Your email address" required><button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-arrow-right"></i></button></div></form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left"><p>&copy; 2026 IndiaTourism. All rights reserved. Made with <i class="fas fa-heart" style="color:var(--saffron);"></i> for Incredible India</p></div>
+                <div class="footer-bottom-right"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+    <div class="modal" id="successModal"><div class="modal-overlay"></div><div class="modal-content"><div class="modal-icon"><i class="fas fa-check-circle"></i></div><h3 id="modalTitle">Success!</h3><p id="modalMessage">Your booking has been confirmed.</p><button class="btn btn-primary" id="modalClose">Continue</button></div></div>
+    <script src="script.js"></script>
+</body>
+</html>
